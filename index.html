@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .user-info {
+            float: right;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-info"> 
+        <button><a href="/">Logout</a></button>
+    </div>
+    
+    <h1>Search for a Product</h1>
+    <form action="/search" method="post">
+        <input type="text" name="query" placeholder="Enter product name" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
